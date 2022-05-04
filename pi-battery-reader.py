@@ -32,15 +32,22 @@ MAX_EXPECTED_AMPS = 5.5
 
 # Verify that RED REACTOR is attached, else return defaults
 try:
-    bat_reader = INA219(SHUNT_OHMS, MAX_EXPECTED_AMPS)
+	# Include busnum=1 for Bullseye
+    bat_reader = INA219(SHUNT_OHMS, MAX_EXPECTED_AMPS, busnum=1)
     bat_reader.configure(bat_reader.RANGE_16V)
 
     voltage = bat_reader.voltage()
     current = bat_reader.current()
-except DeviceRangeError as e:
+
+except DeviceRangeError:
     # Current out of range for the RedReactor
     voltage = 4.5
     current = 6000.0
+	
+except RuntimeError as e:
+	# Failed to access I2C bus but there is power
+	voltage = 0.0
+	current = 0.0
 
 except OSError:
     """RED REACTOR IS NOT Attached, returning defaults"""
