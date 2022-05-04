@@ -50,7 +50,7 @@
 #define GDK_DISABLE_DEPRECATION_WARNINGS
 #include <gtk/gtk.h>
 #include <gdk-pixbuf/gdk-pixbuf.h>
-#include <wiringPiI2C.h>
+// #include <wiringPiI2C.h> - not required
 
 
 #include <stdio.h>
