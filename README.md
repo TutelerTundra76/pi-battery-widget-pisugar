@@ -20,6 +20,7 @@ voltage(float) | current(float)
 ```
 
 **Features**
+- <b> Updated for Bullseye</b>
 - <b>NEW: Battery LOW Warning Pop-up at 10%</b>
 - <b>NEW: Auto shutdown 30 seconds after Battery EMPTY Warning Pop-up at 0% (2.9v)</b>
 - Displays a battery widget on the desktop panel of the general Raspberry LXDE at the right side
@@ -85,6 +86,11 @@ Please adjust your chosen battery capacity by editing ~/.config/lxpanel/LXDE-pi/
 (given in mAh for total capacity)
 
 When the widget is running, you can check for startup errors and battery information at ~/RedReactor_batterylog.txt
+
+You can also run the python code directly to verify reading the battery info:
+```
+  python3 pi-battery-reader.py
+```
 
 Reboot your pi.
 
