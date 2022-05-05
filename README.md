@@ -52,6 +52,7 @@ However, you also need to install the python INA219 library, as follows from a t
 ```
 sudo pip3 install pi-ina219
 ```
+Please remember to enable the I2C bus under the Advanced Options of raspi-config or via the GUI, as documented in the Red Reactor instruction manual (you will need to reboot the Pi for this to take effect).
 
 Then, type the following
 
