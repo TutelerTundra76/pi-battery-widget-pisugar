@@ -1,6 +1,8 @@
 # pi-battery-widget
 
-**We are now live on Kickstarter! So please visit us at https://www.kickstarter.com/projects/pascal-h/the-red-reactor-when-power-really-matters for some great options!**
+<b>** Our Kickstarter campaign has now finished, so we are getting ready for production! We will be going live with a pre-order form shortly in case you missed our campaign or would like to order more units, please check our website at https://www.theredreactor.com/ **</b>
+
+But you can still see the story of our campaign journey on our <a href="https://www.kickstarter.com/projects/pascal-h/the-red-reactor-when-power-really-matters">Kickstarter page</a>, which also shows customer comments and our technology updates.
 
 This code has been forked from the pi-battery-widget status icon widget, with major design changes
 to support The Red Reactor Raspberry Pi UPS, including accurate battery life modelling for charging
