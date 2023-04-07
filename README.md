@@ -1,17 +1,20 @@
 # pi-battery-widget
 
-<b>** Our Kickstarter campaign has now finished, so we are getting ready for production! We will be going live with a pre-order form shortly in case you missed our campaign or would like to order more units, please check our website at https://www.theredreactor.com/ **</b>
+<b>** Our Kickstarter campaign has finished, and we have been busy shipping over 700 units to all our backers. We are live with a pre-order form in case you missed our campaign or would like to order more units, please check our website at https://www.theredreactor.com/ **</b>
 
 But you can still see the story of our campaign journey on our <a href="https://www.kickstarter.com/projects/pascal-h/the-red-reactor-when-power-really-matters">Kickstarter page</a>, which also shows customer comments and our technology updates.
+
+The Red Reactor is designed to fit underneath your Raspberry Pi, leaving the 40-pin header free for all the sensors, displays and other gadgets that you want to use in your projects. With ultra-low stand-by power, and seamless transition even at high currents between the battery and external power, it ensures your data is safe and your design just keeps on working. A wide range of features enable you to quickly create a robust system, including accurate access to the battery voltage and current, simple ON button integration and RUN/RESET support, battery protection and carefully managed charging circuitry to maximise battery life.
 
 This code has been forked from the pi-battery-widget status icon widget, with major design changes
 to support The Red Reactor Raspberry Pi UPS, including accurate battery life modelling for charging
 and discharging profiles.<br>
+
 <b>Now features Battery LOW warning and Battery EMPTY Auto-shutdown</b>
 
 Please visit https://github.com/Scally-H/RedReactor for more technical details and code examples.
 
-Please visit https://www.theredreactor.com for Info, News and Updates on our Kickstarter Launch!
+Please visit https://www.theredreactor.com for Info, News and <a href="https://www.theredreactor.com/reviews/">Reviews</a> from our Kickstarter and pre-order backers!
 
 The C code executes the python code to configure and the read the battery voltage and current via
 the INA219 I2C device, also allowing for the detection of charging, charging complete and no battery states.
