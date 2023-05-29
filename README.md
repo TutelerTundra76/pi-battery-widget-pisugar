@@ -1,6 +1,6 @@
 # pi-battery-widget
 
-<b>** Our Kickstarter campaign has finished, and we have been busy shipping over 700 units to all our backers. We are live with a pre-order form in case you missed our campaign or would like to order more units, please check our website at https://www.theredreactor.com/ **</b>
+<b>** Our Kickstarter campaign has now finished, and we have completed shipping nearly a thousand units to all our backers! We are live with a pre-order form in case you missed our campaign or would like to order more units, please check our website at https://www.theredreactor.com/ - and check out our reviews page at https://www.theredreactor.com/reviews/ **</b>
 
 But you can still see the story of our campaign journey on our <a href="https://www.kickstarter.com/projects/pascal-h/the-red-reactor-when-power-really-matters">Kickstarter page</a>, which also shows customer comments and our technology updates.
 
