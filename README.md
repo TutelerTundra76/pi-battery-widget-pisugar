@@ -10,7 +10,8 @@ This code has been forked from the pi-battery-widget status icon widget, with ma
 to support The Red Reactor Raspberry Pi UPS, including accurate battery life modelling for charging
 and discharging profiles.<br>
 
-<b>Now features Battery LOW warning and Battery EMPTY Auto-shutdown</b>
+<b>:star::star::star: WORKS on Raspberry Pi Bookworm 64-bit OS :star::star::star:<br></b>
+<b>:1st_place_medal:Features Battery LOW warning and Battery EMPTY Auto-shutdown</b>
 
 Please visit https://github.com/Scally-H/RedReactor for more technical details and code examples.
 
@@ -27,7 +28,7 @@ voltage(float) | current(float)
 ```
 
 **Features**
-- <b> Updated for Bullseye</b>
+- <b> Updated for Bullseye and tested on Bookworm</b>
 - <b>NEW: Battery LOW Warning Pop-up at 10%</b>
 - <b>NEW: Auto shutdown 30 seconds after Battery EMPTY Warning Pop-up at 0% (2.9v)</b>
 - Displays a battery widget on the desktop panel of the general Raspberry LXDE at the right side
