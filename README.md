@@ -11,7 +11,7 @@ This code has been forked from the pi-battery-widget status icon widget, with ma
 to support The Red Reactor Raspberry Pi UPS, including accurate battery life modelling for charging
 and discharging profiles.<br>
 
-<b>:star::star::star: WORKS on Raspberry Pi Bookworm 64-bit OS :star::star::star:<br></b>
+<b>:star::star::star: WORKS on Raspberry Pi Bookworm 64-bit OS (with X11) :star::star::star:<br></b>
 <b>:1st_place_medal:Features Battery LOW warning and Battery EMPTY Auto-shutdown</b>
 
 Please visit https://github.com/Scally-H/RedReactor for more technical details and code examples.
