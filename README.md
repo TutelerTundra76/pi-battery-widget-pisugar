@@ -12,6 +12,8 @@ to support The Red Reactor Raspberry Pi UPS, including accurate battery life mod
 and discharging profiles.<br>
 
 <b>:star::star::star: WORKS on Raspberry Pi Bookworm 64-bit OS (with X11) :star::star::star:<br></b>
+:star::star::star: If you need Wayland support then please try out our new [Wayland battery monitor](https://github.com/Scally-H/RedReactor/tree/main/RR_BatWay) :star::star::star:<br>
+
 <b>:1st_place_medal:Features Battery LOW warning and Battery EMPTY Auto-shutdown</b>
 
 Please visit https://github.com/Scally-H/RedReactor for more technical details and code examples.
