@@ -13,47 +13,21 @@
 *** PythonVn: 3.8, 32-bit
 *** Date: January 2022
 """
-from ina219 import INA219  # This controls the battery monitoring IC
-from ina219 import DeviceRangeError  # Handle reading errors
+import os
 
 
-# Constants
-# RED REACTOR I2C address
-I2C_ADDRESS = 0x40
-
-# RED REACTOR Measurement Shunt (defined in Ohms)
-SHUNT_OHMS = 0.05
-
-# Set Current Measurement Range
-MAX_EXPECTED_AMPS = 5.5
-
-# ADC Default
-# ADC*12BIT: 12 bit, conversion time 532us (default).
-
-# Verify that RED REACTOR is attached, else return defaults
+def trim(data):
+      data=data[11:-1]
+      return(float(data))
 try:
 	# Include busnum=1 for Bullseye
-    bat_reader = INA219(SHUNT_OHMS, MAX_EXPECTED_AMPS, busnum=1)
-    bat_reader.configure(bat_reader.RANGE_16V)
+    voltage=trim(os.popen('echo "get battery_v" | sudo nc -U -W 1 /tmp/pisugar-server.sock').read())
+    current=trim(os.popen('echo "get battery_i" | sudo nc -U -W 1 /tmp/pisugar-server.sock').read())
 
-    voltage = bat_reader.voltage()
-    current = bat_reader.current()
-
-except DeviceRangeError:
-    # Current out of range for the RedReactor
-    voltage = 4.5
-    current = 6000.0
-	
 except RuntimeError as e:
-	# Failed to access I2C bus but there is power
+	#  to access I2C bus but there is power
 	voltage = 0.0
 	current = 0.0
-
-except OSError:
-    """RED REACTOR IS NOT Attached, returning defaults"""
-    # 0v means No Red Reactor fitted
-    print("0.000|0.00")
-    exit(1)
 
 finally:
     # Read by sscanf(buffer, "%f|%f",&vv, &current);
